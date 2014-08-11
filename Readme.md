@@ -1,7 +1,7 @@
 Sublime Text 2/3 - Marked App Menu plugin
 =========================================
 
-Adds a handy menu item that opens [Marked.app](http://markedapp.com/).
+Adds a handy menu item that opens [Marked 2.app](http://marked2app.com/) or [Marked.app](http://markedapp.com/) to preview your current file.
 
 **Issues:** https://github.com/icio/sublime-text-marked/issues
 
@@ -16,11 +16,11 @@ Adapted from the excellent [Github for mac](https://github.com/csytan/sublime-te
 
 * Install [Sublime Package Control](http://wbond.net/sublime_packages/package_control)
 * Select "Package Control: Install Package" from the Command Palette (⌘⇧P)
-* Find "Marked.app Menu" and select
+* Find "Marked App Menu" and select
 
 **Manually:**
 
-* Install [Marked.app](http://markedapp.com/) ([App Store](http://itunes.apple.com/us/app/marked/id448925439?ls=1&mt=12))
+* Install [Marked 2.app](http://marked2app.com/) ([App Store](https://itunes.apple.com/gb/app/marked-2/id890031187?mt=12)) or [Marked.app](http://markedapp.com/) ([App Store](http://itunes.apple.com/us/app/marked/id448925439?ls=1&mt=12))
 * Download [sublime-text-marked](https://github.com/icio/sublime-text-marked/zipball/master) and copy unzipped folder to your Sublime Text packages folder (Sublime Text (2) → Preferences → Browse Packages...)
 * Restart Sublime Text
 
