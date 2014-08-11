@@ -1,7 +1,6 @@
 import os
 import sys
 import subprocess
-import sublime
 import sublime_plugin
 
 
@@ -16,7 +15,15 @@ class MarkedCommand(sublime_plugin.WindowCommand):
         for k, v in proc_env.items():
             proc_env[k] = os.path.expandvars(v).encode(encoding)
 
-        subprocess.call(['open', '-a', 'Marked', filename], env=proc_env)
+        for app in ('Marked 2', 'Marked'):
+            try:
+                subprocess.check_call(
+                    ['open', '-a', app, filename],
+                    env=proc_env
+                )
+                break
+            except subprocess.CalledProcessError:
+                pass
 
     def is_enabled(self):
         return True
